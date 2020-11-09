@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/pzibang/codes/learn_cmake/libadd/include/myadd.h
+iostream
+-
+
+/home/pzibang/codes/learn_cmake/libsub/include/mysub.h
+iostream
+-
+
+/home/pzibang/codes/learn_cmake/main.cpp
+./libsub/include/mysub.h
+/home/pzibang/codes/learn_cmake/libsub/include/mysub.h
+./libadd/include/myadd.h
+/home/pzibang/codes/learn_cmake/libadd/include/myadd.h
+myplus.h
+/home/pzibang/codes/learn_cmake/myplus.h
+
+/home/pzibang/codes/learn_cmake/myplus.cpp
+myplus.h
+/home/pzibang/codes/learn_cmake/myplus.h
+
+/home/pzibang/codes/learn_cmake/myplus.h
+iostream
+-
+

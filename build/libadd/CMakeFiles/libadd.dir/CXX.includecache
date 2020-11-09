@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../libadd/include/myadd.h
+iostream
+-
+
+/home/pzibang/codes/learn_cmake/libadd/myadd.cpp
+myadd.h
+/home/pzibang/codes/learn_cmake/libadd/myadd.h
+

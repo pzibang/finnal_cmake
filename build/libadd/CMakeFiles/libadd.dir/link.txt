@@ -1,0 +1,2 @@
+/usr/bin/ar qc liblibadd.a  CMakeFiles/libadd.dir/myadd.cpp.o
+/usr/bin/ranlib liblibadd.a

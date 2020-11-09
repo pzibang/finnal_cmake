@@ -1,0 +1,1 @@
+/usr/bin/c++  -std=c++11 -lpthread -Wall -std=c++11 -lpthread -Wall -O0 -g -ggdb  -rdynamic CMakeFiles/test.dir/main.cpp.o CMakeFiles/test.dir/myplus.cpp.o  -o bin/test  libadd/liblibadd.a libsub/liblibsub.a 
