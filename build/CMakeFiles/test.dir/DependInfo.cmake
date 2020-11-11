@@ -15,6 +15,7 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../libadd/include"
   "../libsub/include"
+  "../include/include"
   "../"
   )
 

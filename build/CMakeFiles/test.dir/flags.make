@@ -6,5 +6,5 @@ CXX_FLAGS = -std=c++11 -lpthread -Wall -std=c++11 -lpthread -Wall -O0 -g -ggdb
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/pzibang/codes/learn_cmake/libadd/include -I/home/pzibang/codes/learn_cmake/libsub/include -I/home/pzibang/codes/learn_cmake 
+CXX_INCLUDES = -I/home/pzibang/codes/learn_cmake/libadd/include -I/home/pzibang/codes/learn_cmake/libsub/include -I/home/pzibang/codes/learn_cmake/include/include -I/home/pzibang/codes/learn_cmake 
 

@@ -6,16 +6,30 @@ project(PROJECT)
 #设置变量TARGETS，其内容为"test"
 set(TARGETS "test")
 
-set(libadd_path "libadd")
-set(libsub_path "libsub")
-include_directories(${PROJECT_SOURCE_DIR}/${libadd_path}/include)
-include_directories(${PROJECT_SOURCE_DIR}/${libsub_path}/include)
-include_directories(${PROJECT_SOURCE_DIR})
+#set(libadd_path "libadd")
+#set(libsub_path "libsub")
+#include_directories(${PROJECT_SOURCE_DIR}/${libadd_path}/include)
+#include_directories(${PROJECT_SOURCE_DIR}/${libsub_path}/include)
+#include_directories(${PROJECT_SOURCE_DIR})
 
 #file(GLOB src_file "${PROJECT_SOURCE_DIR}/${src_path}/*.*")
-aux_source_directory(${PROJECT_SOURCE_DIR}/${libadd_path} ADD_SRC)
-aux_source_directory(${PROJECT_SOURCE_DIR}/${libsub_path} SUB_SRC)
+#aux_source_directory(${PROJECT_SOURCE_DIR}/${libadd_path} ADD_SRC)
+#aux_source_directory(${PROJECT_SOURCE_DIR}/${libsub_path} SUB_SRC)
+#aux_source_directory(. MAIN_SRC)
+
+set(SUBDIRS "libadd" "libsub" "include")
+foreach(dir ${SUBDIRS})
+	aux_source_directory(${PROJECT_SOURCE_DIR}/${dir} ALL_SRC)
+	include_directories(${PROJECT_SOURCE_DIR}/${dir}/include)
+endforeach()
+include_directories(${PROJECT_SOURCE_DIR})
 aux_source_directory(. MAIN_SRC)
+
+
+foreach(tmp ${ALL_SRC})
+	message(STATUS "${tmp}")
+endforeach()
+
 
 #设置输出目录
 set(OUTDIRS "build") # Debug:调试 Release:不调试
@@ -32,13 +46,10 @@ if(CMAKE_COMPILER_IS_GNUCXX)
     set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS} -O3")
 endif(CMAKE_COMPILER_IS_GNUCXX)
 
-# 查找当前目录下的所有源文件
-# 并将名称保存到 DIR_SRCS 变量
-aux_source_directory(. DIR_SRCS)
 
 #生成可执行文件
-add_executable(${TARGETS} ${ADD_SRC} ${SUB_SRC} ${MAIN_SRC})
-
+#add_executable(${TARGETS} ${ADD_SRC} ${SUB_SRC} ${MAIN_SRC})
+add_executable(${TARGETS} ${ALL_SRC} ${MAIN_SRC})
 
 
 #提示错误：undefined reference to `pthread_create' collect2: error: ld returned 1 exit status
