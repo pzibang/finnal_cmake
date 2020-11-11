@@ -1,9 +1,3 @@
 /home/pzibang/codes/learn_cmake/build/CMakeFiles/rebuild_cache.dir
 /home/pzibang/codes/learn_cmake/build/CMakeFiles/edit_cache.dir
 /home/pzibang/codes/learn_cmake/build/CMakeFiles/test.dir
-/home/pzibang/codes/learn_cmake/build/libadd/CMakeFiles/rebuild_cache.dir
-/home/pzibang/codes/learn_cmake/build/libadd/CMakeFiles/edit_cache.dir
-/home/pzibang/codes/learn_cmake/build/libadd/CMakeFiles/libadd.dir
-/home/pzibang/codes/learn_cmake/build/libsub/CMakeFiles/rebuild_cache.dir
-/home/pzibang/codes/learn_cmake/build/libsub/CMakeFiles/edit_cache.dir
-/home/pzibang/codes/learn_cmake/build/libsub/CMakeFiles/libsub.dir

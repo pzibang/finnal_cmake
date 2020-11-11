@@ -6,23 +6,19 @@
 
 #IncludeRegexTransform: 
 
-/home/pzibang/codes/learn_cmake/libadd/include/myadd.h
+../libadd/include/myadd.h
 iostream
 -
 
-/home/pzibang/codes/learn_cmake/libsub/include/mysub.h
+../libsub/include/mysub.h
 iostream
 -
 
 /home/pzibang/codes/learn_cmake/main.cpp
-./libsub/include/mysub.h
-/home/pzibang/codes/learn_cmake/libsub/include/mysub.h
-./libadd/include/myadd.h
-/home/pzibang/codes/learn_cmake/libadd/include/myadd.h
-myplus.h
-/home/pzibang/codes/learn_cmake/myplus.h
-
-/home/pzibang/codes/learn_cmake/myplus.cpp
+mysub.h
+/home/pzibang/codes/learn_cmake/mysub.h
+myadd.h
+/home/pzibang/codes/learn_cmake/myadd.h
 myplus.h
 /home/pzibang/codes/learn_cmake/myplus.h
 

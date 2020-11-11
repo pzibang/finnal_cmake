@@ -4,6 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/pzibang/codes/learn_cmake/libadd/myadd.cpp" "/home/pzibang/codes/learn_cmake/build/CMakeFiles/test.dir/libadd/myadd.cpp.o"
+  "/home/pzibang/codes/learn_cmake/libsub/mysub.cpp" "/home/pzibang/codes/learn_cmake/build/CMakeFiles/test.dir/libsub/mysub.cpp.o"
   "/home/pzibang/codes/learn_cmake/main.cpp" "/home/pzibang/codes/learn_cmake/build/CMakeFiles/test.dir/main.cpp.o"
   "/home/pzibang/codes/learn_cmake/myplus.cpp" "/home/pzibang/codes/learn_cmake/build/CMakeFiles/test.dir/myplus.cpp.o"
   )
@@ -11,12 +13,13 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "../libadd/include"
+  "../libsub/include"
+  "../"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/pzibang/codes/learn_cmake/build/libadd/CMakeFiles/libadd.dir/DependInfo.cmake"
-  "/home/pzibang/codes/learn_cmake/build/libsub/CMakeFiles/libsub.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

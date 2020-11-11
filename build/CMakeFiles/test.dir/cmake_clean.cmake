@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/test.dir/libadd/myadd.cpp.o"
+  "CMakeFiles/test.dir/libsub/mysub.cpp.o"
   "CMakeFiles/test.dir/main.cpp.o"
   "CMakeFiles/test.dir/myplus.cpp.o"
   "bin/test"

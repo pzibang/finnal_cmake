@@ -123,31 +123,59 @@ test/fast:
 	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/build
 .PHONY : test/fast
 
-#=============================================================================
-# Target rules for targets named libadd
+libadd/myadd.o: libadd/myadd.cpp.o
 
-# Build rule for target.
-libadd: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 libadd
-.PHONY : libadd
+.PHONY : libadd/myadd.o
 
-# fast build rule for target.
-libadd/fast:
-	$(MAKE) -f libadd/CMakeFiles/libadd.dir/build.make libadd/CMakeFiles/libadd.dir/build
-.PHONY : libadd/fast
+# target to build an object file
+libadd/myadd.cpp.o:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/libadd/myadd.cpp.o
+.PHONY : libadd/myadd.cpp.o
 
-#=============================================================================
-# Target rules for targets named libsub
+libadd/myadd.i: libadd/myadd.cpp.i
 
-# Build rule for target.
-libsub: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 libsub
-.PHONY : libsub
+.PHONY : libadd/myadd.i
 
-# fast build rule for target.
-libsub/fast:
-	$(MAKE) -f libsub/CMakeFiles/libsub.dir/build.make libsub/CMakeFiles/libsub.dir/build
-.PHONY : libsub/fast
+# target to preprocess a source file
+libadd/myadd.cpp.i:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/libadd/myadd.cpp.i
+.PHONY : libadd/myadd.cpp.i
+
+libadd/myadd.s: libadd/myadd.cpp.s
+
+.PHONY : libadd/myadd.s
+
+# target to generate assembly for a file
+libadd/myadd.cpp.s:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/libadd/myadd.cpp.s
+.PHONY : libadd/myadd.cpp.s
+
+libsub/mysub.o: libsub/mysub.cpp.o
+
+.PHONY : libsub/mysub.o
+
+# target to build an object file
+libsub/mysub.cpp.o:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/libsub/mysub.cpp.o
+.PHONY : libsub/mysub.cpp.o
+
+libsub/mysub.i: libsub/mysub.cpp.i
+
+.PHONY : libsub/mysub.i
+
+# target to preprocess a source file
+libsub/mysub.cpp.i:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/libsub/mysub.cpp.i
+.PHONY : libsub/mysub.cpp.i
+
+libsub/mysub.s: libsub/mysub.cpp.s
+
+.PHONY : libsub/mysub.s
+
+# target to generate assembly for a file
+libsub/mysub.cpp.s:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/libsub/mysub.cpp.s
+.PHONY : libsub/mysub.cpp.s
 
 main.o: main.cpp.o
 
@@ -212,8 +240,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... test"
-	@echo "... libadd"
-	@echo "... libsub"
+	@echo "... libadd/myadd.o"
+	@echo "... libadd/myadd.i"
+	@echo "... libadd/myadd.s"
+	@echo "... libsub/mysub.o"
+	@echo "... libsub/mysub.i"
+	@echo "... libsub/mysub.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

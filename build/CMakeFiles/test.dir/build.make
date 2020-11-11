@@ -57,9 +57,35 @@ include CMakeFiles/test.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/test.dir/flags.make
 
+CMakeFiles/test.dir/libadd/myadd.cpp.o: CMakeFiles/test.dir/flags.make
+CMakeFiles/test.dir/libadd/myadd.cpp.o: ../libadd/myadd.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pzibang/codes/learn_cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/test.dir/libadd/myadd.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/libadd/myadd.cpp.o -c /home/pzibang/codes/learn_cmake/libadd/myadd.cpp
+
+CMakeFiles/test.dir/libadd/myadd.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/libadd/myadd.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pzibang/codes/learn_cmake/libadd/myadd.cpp > CMakeFiles/test.dir/libadd/myadd.cpp.i
+
+CMakeFiles/test.dir/libadd/myadd.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/libadd/myadd.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pzibang/codes/learn_cmake/libadd/myadd.cpp -o CMakeFiles/test.dir/libadd/myadd.cpp.s
+
+CMakeFiles/test.dir/libsub/mysub.cpp.o: CMakeFiles/test.dir/flags.make
+CMakeFiles/test.dir/libsub/mysub.cpp.o: ../libsub/mysub.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pzibang/codes/learn_cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/test.dir/libsub/mysub.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/libsub/mysub.cpp.o -c /home/pzibang/codes/learn_cmake/libsub/mysub.cpp
+
+CMakeFiles/test.dir/libsub/mysub.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/libsub/mysub.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pzibang/codes/learn_cmake/libsub/mysub.cpp > CMakeFiles/test.dir/libsub/mysub.cpp.i
+
+CMakeFiles/test.dir/libsub/mysub.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/libsub/mysub.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pzibang/codes/learn_cmake/libsub/mysub.cpp -o CMakeFiles/test.dir/libsub/mysub.cpp.s
+
 CMakeFiles/test.dir/main.cpp.o: CMakeFiles/test.dir/flags.make
 CMakeFiles/test.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pzibang/codes/learn_cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/test.dir/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pzibang/codes/learn_cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/test.dir/main.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/main.cpp.o -c /home/pzibang/codes/learn_cmake/main.cpp
 
 CMakeFiles/test.dir/main.cpp.i: cmake_force
@@ -72,7 +98,7 @@ CMakeFiles/test.dir/main.cpp.s: cmake_force
 
 CMakeFiles/test.dir/myplus.cpp.o: CMakeFiles/test.dir/flags.make
 CMakeFiles/test.dir/myplus.cpp.o: ../myplus.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pzibang/codes/learn_cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/test.dir/myplus.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pzibang/codes/learn_cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/test.dir/myplus.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/myplus.cpp.o -c /home/pzibang/codes/learn_cmake/myplus.cpp
 
 CMakeFiles/test.dir/myplus.cpp.i: cmake_force
@@ -85,19 +111,21 @@ CMakeFiles/test.dir/myplus.cpp.s: cmake_force
 
 # Object files for target test
 test_OBJECTS = \
+"CMakeFiles/test.dir/libadd/myadd.cpp.o" \
+"CMakeFiles/test.dir/libsub/mysub.cpp.o" \
 "CMakeFiles/test.dir/main.cpp.o" \
 "CMakeFiles/test.dir/myplus.cpp.o"
 
 # External object files for target test
 test_EXTERNAL_OBJECTS =
 
+bin/test: CMakeFiles/test.dir/libadd/myadd.cpp.o
+bin/test: CMakeFiles/test.dir/libsub/mysub.cpp.o
 bin/test: CMakeFiles/test.dir/main.cpp.o
 bin/test: CMakeFiles/test.dir/myplus.cpp.o
 bin/test: CMakeFiles/test.dir/build.make
-bin/test: libadd/liblibadd.a
-bin/test: libsub/liblibsub.a
 bin/test: CMakeFiles/test.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/pzibang/codes/learn_cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable bin/test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/pzibang/codes/learn_cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable bin/test"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

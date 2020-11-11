@@ -1,5 +1,5 @@
-#include "./libsub/include/mysub.h"
-#include "./libadd/include/myadd.h"
+#include "mysub.h"
+#include "myadd.h"
 #include "myplus.h"
 
 int main(void)
