@@ -19,15 +19,15 @@ endforeach()
 ## 通用cmake
 使用通用的cmake的时候，其文件构成必须是以下形式：
 root
-    |---model
-        |---include
-            |---xxx.h
-            |---xxxx.h
-        |---xxx.cpp
-        |---xxxx.cpp
-        |---xxxxx.cpp
-    |---main.cpp
-    |---xxx.h
+    |---model  
+        |---include  
+            |---xxx.h  
+            |---xxxx.h  
+        |---xxx.cpp  
+        |---xxxx.cpp  
+        |---xxxxx.cpp  
+    |---main.cpp  
+    |---xxx.h  
 根目录下不作要求，但是模块中的文件包含是固定的，因为在cmake中添加了检索PROJECT_SOURCE_DIR下的源文件，并将PROJECT_SOURCE_DIR作为头文件路径包含，
 所以可以写成上面的形式。
 
