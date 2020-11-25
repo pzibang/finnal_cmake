@@ -35,6 +35,7 @@ root
 
   
 实现如下：
+```
 cmake_minimum_required(VERSION 2.8 FATAL_ERROR)
 
 #设置工程名字
@@ -79,4 +80,4 @@ add_executable(${TARGETS} ${ALL_SRC} ${MAIN_SRC})
 #解决：需要添加 pthread 库
 find_package(Threads)
 target_link_libraries(${TARGETS} ${CMAKE_THREAD_LIBS_INIT})
-
+```
